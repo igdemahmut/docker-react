@@ -10,7 +10,7 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  edge: "true"
+  #edge: "true"
   region: "us-east-1" 
   app: "frontend"
   environment: "Frontend-env"
@@ -20,6 +20,6 @@ deploy:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$AWS_SECRET_KEY"
-  skip_cleanup: "true"
+  #skip_cleanup: "true"
   
 
